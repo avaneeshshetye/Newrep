@@ -9,6 +9,7 @@ public class First {
         char[] ch3 = new char[ch.length + ch1.length];
         int ch3 [] = ch[i] + ch1[i];
 
+
         int i=0;
         for(i=0;i<ch3.length;i++){
             System.out.println(ch3[i]);

@@ -1,7 +1,5 @@
 package com.Loops;
 
-import org.w3c.dom.ls.LSOutput;
-
 import java.util.Scanner;
 
 public class n {
@@ -9,37 +7,44 @@ public class n {
         System.out.println("Enter number");
         Scanner sc = new Scanner(System.in);
         int choice = sc.nextInt();
-        int k = 9;
-        int result = generate(choice);
-        System.out.println(result);
+        int x = 9;
+        int result = 1;
+        int sum = 0;
+        generate(choice);
+
 
 
     }
 
-    public static int generate(int choice) {
-        int i = 0;
-        int k = 0;
-        int cube = 1;
-        int x = 0;
+    public static void generate(int choice) {
+        int sum = 0;
+
+        for (int i = 0; i < choice; i++) {
 
 
-        while (x > 0) {
-
-            for (i = 0; i <= choice; i++) {
-                cube = i * cube;
-                System.out.print(k + 9 * 10 * cube);
-                System.out.print("+");
-                cube = 1;
-
+            int result = 1;
+            for (int j = 1; j <= i; j++) {
+                result = result * 10;
             }
+            sum += 9 * result;
+            System.out.println(sum + "");
 
-            return k;
+
         }
 
 
-        return i;
     }
+
+
+
+
+
+        //choice means the power up till it should increment
+
+
+
 }
+
 
 
 

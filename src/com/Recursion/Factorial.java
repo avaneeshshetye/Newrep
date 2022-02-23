@@ -13,7 +13,7 @@ public class Factorial {
     }
 
     public static int Recursion(int n) {
-        int result = 1;
+
         if (n == 1) {
             return n;
         }
